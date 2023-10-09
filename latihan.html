@@ -2,8 +2,20 @@
     <head>
         <title>page title</title>
     </head>
+    <style>
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: auto;
+  
+}
+table{
+  width: 90%;
+  
+}
+    </style>
     <body>
-            <h5 style="background-color: chartreuse;"><i>SYAHRUL ADHIM 22090012 3C</i></h5>
+            <h4 style="background-color: chartreuse;"><i>SYAHRUL ADHIM 22090012 3C</i></h4>
         <div style="display: flex; gap: 24px;">
             <div>
                 <img src="images.jpg" width="450" height="400">
@@ -22,8 +34,54 @@
             <br>
             <a href="https://www.orami.co.id/magazine/wisata-guci?page=all"><b>BACA JUGA : </b><i>  wisata pemandian air panas guci</i> </a>
             </div>
-        </div> 
+        </div>     
+        <br>       
+        <table>
+          <tr>
+            <th>Nama Lokasi</th>
+            <th colspan="2">Deskripsi Tempat</th>
+            <th>Harga Tiket</th>
+          </tr>
+          <tr>
+            <td rowspan="2" style="text-align: center;">Guci</td>
+            <th>Lokasi</th>
+            <td>Tegal Jawa Tengah</td>
+            <td rowspan="2" style="text-align: center;">20.000</td>
+          </tr>
+          <tr>
+            <th>Deskripsi</th>
+            <td>Terkenal dengan mata air panas alami yang jernih, tempat ini menjadi tujuan utama bagi pengunjung yang ingin merasakan kesejukan air panas dan berendam di kolam-kolam yang tersedia. Terdapat berbagai jenis kolam dengan suhu air yang berbeda-beda.</td>
+          </tr>
+          <!-- <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+          </tr>
+          <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+          </tr>
+          <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+          </tr> -->
+          </table>
+          <br>
+            <form action="proses_form.php" method="POST" style="text-align: center; ">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama"><br><br>
         
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+        
+                <label for="pesan">Pesan:</label>
+                <input id="pesan" name="pesan"></input><br><br>
+        
+                <input type="submit" value="Kirim">
+            </form>
+
         
     </body>
 </html>
